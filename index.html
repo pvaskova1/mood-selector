@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Goldman:wght@400;700&family=Honk&family=Oswald:wght@200..700&family=Quintessential&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+    <title>moodChange</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            document.querySelectorAll('.moodChange').forEach(button => {
+                button.onclick = () => {
+
+                    document.body.style.backgroundColor = button.dataset.color
+                    document.querySelector('#nadpis').style.fontFamily = button.dataset.font
+                };
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1 id="nadpis">Změň náladu</h1>
+    <div class="usporadani_tlacitka">
+        <button class="moodChange happy" data-color="yellow" data-font="'Honk'">happy</button>
+        <button class="moodChange sad" data-color="blue" data-font="Quintessential">sad</button>
+        <button class="moodChange angry" data-color="red" data-font="Goldman">angry</button>
+
+        <!-- fonty jakoby nejsou -->
+        <button class="moodChange disgust" data-color="green" data-font="'Honk'">disgust</button>
+        <button class="moodChange fear" data-color="purple" data-font="Quintessential">fear</button>
+        <button class="moodChange anxiety" data-color="orange" data-font="Goldman">anxiety</button>
+        <button class="moodChange envy" data-color="cyan" data-font="'Honk'">envy</button>
+        <button class="moodChange emb" data-color="pink" data-font="Quintessential">embarrasment</button>
+        <button class="moodChange lazy" data-color="gray" data-font="Goldman">laziness</button>
+    </div>
+    <div class="caje">
+        <img src="https://theknowfresno.org/wp-content/uploads/2024/08/Inside-Out-2-Anxiety.jpeg" alt="emoce">
+    </div>
+</body>
+
+</html>
