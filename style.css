@@ -1,0 +1,44 @@
+CSS
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    width: 210px;
+    margin: 5px;
+    height: 60px;
+    font-size: 30px;
+}
+
+.happy {
+    background-color: yellow;
+    font-family: 'Honk';
+}
+
+.sad {
+    background-color: blue;
+    font-family: 'Quintessential';
+}
+
+.angry {
+    background-color: red;
+    font-family: 'Goldman';
+}
+
+.moodChange.active {
+    background-color: blueviolet;
+    transform: scale(1.05);
+}
+
+img {
+   max-width: 800px;
+}
+
+.caje {
+    margin-top: 90px;
+}
